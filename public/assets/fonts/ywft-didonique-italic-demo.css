@@ -1,0 +1,24 @@
+/*
+Font: 		YWFT Didonique
+Style: 		Italic Demo
+URL: 		https://youworkforthem.com/font/T28072/ywft-didonique
+Foundry: 	YouWorkForThem
+Foundry: 	https://youworkforthem.com/designer/1/youworkforthem
+Copyright:	
+Version: 	18
+Created:	April 03, 2026
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+    font-family: 'YWFT-Didonique';
+    src: url('ywft-didonique-italic-demo.woff2') format('woff2'),
+         url('ywft-didonique-italic-demo.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}

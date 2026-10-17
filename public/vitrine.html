@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>La Vitrine — Bexly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Bande vidéo premium -->
+  <div class="vitrine-banner">
+    <video autoplay muted loop class="banner-video">
+      <source src="videos/E S C A P E.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Menu haut -->
+  <nav class="vitrine-nav">
+    <a href="index.html">Hall</a>
+    <button id="back-to-hall">Retour au Hall</button>
+  </nav>
+
+  <!-- Layout général -->
+  <div class="vitrine-layout">
+
+    <!-- Sidebar catégories -->
+    <aside class="vitrine-sidebar">
+      <h3>Catégories</h3>
+      <ul>
+        <li><a href="#véhicules">véhicules</a></li>
+        <li><a href="#drift">Drift</a></li>
+        <li><a href="#rework">Rework</a></li>
+        <li><a href="#bodykits">Bodykits</a></li>
+        <li><a href="#packs">Packs</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="vitrine-content">
+
+      <!-- STANCE -->
+      <h2 id="stance" class="category-title">Véhicules</h2>
+      <section class="featured-mods">
+
+        <div class="apple-card">
+          <img src="images/burnside-windsore.png" alt="Mod Stance 1">
+          <div class="apple-overlay">
+            <h3>ETK 900 Series</h3>
+            <p>Breakpasse partout.</p>
+            <a href="mods/etkluxe_repo.zip" download class="download-btn">Télécharger</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- DRIFT -->
+      <h2 id="drift" class="category-title">Drift</h2>
+      <section class="featured-mods">
+
+        <div class="apple-card">
+          <img src="images/mod2.jpg" alt="Mod Drift 1">
+          <div class="apple-overlay">
+            <h3>Pessima Drift</h3>
+            <p>Setup drift complet.</p>
+            <button>Télécharger</button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- REWORK -->
+      <h2 id="rework" class="category-title">Rework</h2>
+      <section class="featured-mods">
+
+        <div class="apple-card">
+          <img src="images/mod3.jpg" alt="Mod Rework 1">
+          <div class="apple-overlay">
+            <h3>BX Rework</h3>
+            <p>Restauration complète.</p>
+            <button>Télécharger</button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- BODYKITS -->
+      <h2 id="bodykits" class="category-title">Bodykits</h2>
+      <section class="featured-mods">
+
+        <div class="apple-card">
+          <img src="images/mod4.jpg" alt="Bodykit 1">
+          <div class="apple-overlay">
+            <h3>Bodykit BX</h3>
+            <p>Kit complet stance.</p>
+            <button>Télécharger</button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- PACKS -->
+      <h2 id="packs" class="category-title">Packs</h2>
+      <section class="featured-mods">
+
+        <div class="apple-card">
+          <img src="images/mod5.jpg" alt="Pack 1">
+          <div class="apple-overlay">
+            <h3>Pack Drift</h3>
+            <p>3 véhicules + setup.</p>
+            <button>Télécharger</button>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Script bouton retour -->
+  <script>
+    document.getElementById("back-to-hall").addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  </script>
+
+</body>
+
+</html>

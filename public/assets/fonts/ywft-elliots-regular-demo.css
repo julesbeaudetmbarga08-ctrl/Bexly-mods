@@ -1,0 +1,16 @@
+/*
+Font: YWFT Elliots
+Style: Regular Demo
+URL: https://youworkforthem.com/font/T27415/ywft-elliots
+Foundry: YouWorkForThem
+License: https://www.youworkforthem.com/font-license
+*/
+
+@font-face {
+    font-family: 'YWFT-Elliots';
+    src: url('ywft-elliots-regular-demo.woff2') format('woff2'),
+         url('ywft-elliots-regular-demo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

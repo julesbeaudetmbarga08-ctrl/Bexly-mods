@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bexly – BeamNG.drive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fonts/ywft-elliots-regular-demo.css">
+    <link rel="stylesheet" href="assets/fonts/ywft-didonique-italic-demo.css">
+</head>
+
+<body>
+    <div id="intro">
+        <h1 class="intro-title">Bexly</h1>
+        <button id="intro-btn">Bienvenue</button>
+    </div>
+
+    <div id="hall">
+        <!-- TON SITE NORMAL ICI -->
+    </div>
+
+    <div class="background"></div>
+    <div class="menu-bg-text">Le Club</div>
+
+    <header class="translucide">
+        <h1>Bexly</h1>
+        <p>Bexly, votre mod CenterPark's </p>
+    </header>
+
+    <nav class="translucide nav-bar">
+        <a href="index.html">Hall</a>
+        <a href="vitrine.html">La vitrine</a>
+        <a href="#">Discord</a>
+    </nav>
+    <section id="index">
+        <h2 class="index-title">Index</h2>
+        <div class="index-content">
+            <p>
+                Bienvenue sur <strong>Le Club</strong>, un serveur Discord né de la passion pour <em>BeamNG.drive</em>
+                et la création de mods.
+                Fondé par <strong>Sterlings</strong>, le projet <strong>Bexly</strong> est une vitrine de créativité et
+                de
+                partage, où chaque membre contribue à faire vivre la communauté.
+            </p>
+            <p>
+                Le serveur <strong>Le Club</strong> a été créé pour rassembler les passionnés de simulation automobile,
+                de design et de performance.
+                Derrière cette aventure, une équipe soudée veille à son bon fonctionnement :
+            </p>
+            <ul>
+                <li><strong>RPMNoise</strong> — Modérateur, garant de l’ordre et de la bonne ambiance.</li>
+                <li><strong>Kovva</strong> — Contributeur, créateur de contenu et soutien technique.</li>
+            </ul>
+            <p>
+                Ce site est la porte d’entrée vers cet univers : une lettre ouverte à tous ceux qui veulent découvrir,
+                apprendre et partager autour de la mécanique virtuelle.
+            </p>
+        </div>
+    </section>
+
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <filter id="liquid">
+            <feTurbulence id="turbulence" type="fractalNoise" baseFrequency="0.015" numOctaves="3" />
+            <feDisplacementMap in="SourceGraphic" scale="25" />
+        </filter>
+    </svg>
+
+    <script>
+        const turb = document.getElementById("turbulence");
+        let frame = 0;
+
+        document.addEventListener("mousemove", (e) => {
+            const liquid = document.querySelector(".menu-bg-text");
+
+            // Mouvement fluide
+            const x = (e.clientX / window.innerWidth - 0.5) * 40;
+            const y = (e.clientY / window.innerHeight - 0.5) * 40;
+
+            liquid.style.transform =
+                `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+
+            // Effet liquide dynamique
+            frame += 0.02;
+            const freq = 0.015 + Math.sin(frame) * 0.005;
+            turb.setAttribute("baseFrequency", freq);
+        });
+    </script>
+    <script>
+        document.getElementById("intro-btn").addEventListener("click", () => {
+            document.getElementById("intro").classList.add("hide");
+        });
+    </script>
+
+
+</body>
+
+</html>
